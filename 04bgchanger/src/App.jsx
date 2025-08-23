@@ -15,10 +15,15 @@ function App() {
       style={{ backgroundColor: color }}
     > 
       {/* Heading text */}
-      <h1 className="text-opacity-100 text-center text-wrap text-2xl"> 
-        Hii EveryOne This is background Changer Made By Pankaj Singh !!!! 
-        Please Click on a button to Change the Background
-      </h1>
+      <h1
+  className={`text-opacity-100 text-center text-wrap text-2xl ${
+    color === "black" ? "text-white" : "text-black"
+  }`}
+>
+  Hii EveryOne This is background Changer Made By Pankaj Singh !!!!
+  Please Click on a button to Change the Background
+</h1>
+
 
       {/* ✅ Buttons ko bottom par fix kiya hai (fixed position) */}
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
